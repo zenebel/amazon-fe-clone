@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #131921;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar__logo img {
+  height: 30px;
+}
+
+.navbar__search {
+  display: flex;
+  flex: 1;
+  margin: 0 20px;
+}
+
+.navbar__searchInput {
+  flex: 1;
+  padding: 8px;
+  border: none;
+}
+
+.navbar__searchButton {
+  background-color: #febd69;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.navbar_option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-size: 12px;
+}
