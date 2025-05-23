@@ -1,13 +1,13 @@
+import React from "react";
 import "./Banner.css";
 
 function Banner() {
   return (
     <div className="banner">
-      <img
-        className="banner__image"
-        src="https://m.media-amazon.com/images/I/61DUO0NqyyL._SX3000_.jpg"
-        alt="Hero Banner"
-      />
+      <div className="banner__content">
+        <h1>Great deals on today's featured products</h1>
+        <p>Shop now and save on electronics, books, and more</p>
+      </div>
     </div>
   );
 }

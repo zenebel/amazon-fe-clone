@@ -1,6 +1,32 @@
 .productList {
-  background: lightgray;
-  padding: 20px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
+  padding: 20px;
+  background-color: #eaeded; /* Amazon light gray background */
+  min-height: 400px;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .productList {
+    gap: 15px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .productList {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productList {
+    padding: 10px 5px;
+  }
 }
