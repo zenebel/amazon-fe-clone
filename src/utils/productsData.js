@@ -1,3 +1,8 @@
+// Import product images
+import airPodsImage from "../assets/images/products/airPods-pro.webp";
+import echoDotImage from "../assets/images/products/echo-dot.webp";
+import kindlePaperwhiteImage from "../assets/images/products/kindle-paperwhite.webp";
+
 // Product data for the Amazon clone
 export const productsData = [
   {
@@ -7,7 +12,7 @@ export const productsData = [
     originalPrice: 249.99,
     rating: 4.5,
     reviewCount: 12847,
-    image: "https://m.media-amazon.com/images/I/81KkrQWEHIL._AC_SL1500_.jpg",
+    image: airPodsImage,
     category: "Electronics",
     description: "Active Noise Cancelling with Transparency Mode",
     isAmazonChoice: true,
@@ -21,7 +26,7 @@ export const productsData = [
     originalPrice: 59.99,
     rating: 4.3,
     reviewCount: 8523,
-    image: "https://m.media-amazon.com/images/I/61u48FEs3xL._AC_SL1000_.jpg",
+    image: echoDotImage,
     category: "Smart Home",
     description: "Smart speaker with bigger vibrant sound",
     isAmazonChoice: false,
@@ -35,7 +40,7 @@ export const productsData = [
     originalPrice: 149.99,
     rating: 4.6,
     reviewCount: 25691,
-    image: "https://m.media-amazon.com/images/I/61nBzv5XjBL._AC_SL1000_.jpg",
+    image: kindlePaperwhiteImage,
     category: "Electronics",
     description: "Waterproof with 6.8 display and adjustable warm light",
     isAmazonChoice: true,

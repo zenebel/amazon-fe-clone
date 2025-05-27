@@ -18,6 +18,8 @@
   height: 150px;
   object-fit: contain;
   margin-bottom: 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
 }
 
 .productCard h4 {
@@ -44,5 +46,3 @@
   font-weight: bold;
   margin-top: auto;
 }
-
-
