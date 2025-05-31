@@ -1,0 +1,27 @@
+/* src/components/CategoryBar/CategoryBar.css */
+
+.categoryBar {
+  background-color: #232f3e;
+  color: white;
+  padding: 10px 20px;
+  overflow-x: auto;
+}
+
+.categoryBar__list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.categoryBar__list li {
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.categoryBar__list li:hover {
+  color: #febd69;
+}

@@ -1,0 +1,84 @@
+.footer {
+  margin-top: 40px;
+  background-color: #232f3e;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+}
+
+.footer__backToTop {
+  text-align: center;
+  padding: 15px 0;
+  cursor: pointer;
+  background-color: #37475a;
+}
+
+.footer__backToTop:hover {
+  background-color: #485769;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px 20px;
+  border-bottom: 1px solid #3a4553;
+  flex-wrap: wrap;
+}
+
+.footer__column {
+  color: white;
+  margin-bottom: 20px;
+  min-width: 150px;
+}
+
+.footer__column h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer__column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__column ul li {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.footer__column ul li:hover {
+  text-decoration: underline;
+}
+
+.footer__bottom {
+  text-align: center;
+  color: #ddd;
+  font-size: 12px;
+  padding: 20px 0;
+  background-color: #131a22;
+}
+.footer__regionBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #232f3e;
+  border-top: 1px solid #3a4553;
+}
+
+.footer__logo {
+  height: 30px; /* scales the image height */
+  width: auto; /* maintains aspect ratio */
+  object-fit: contain; /* ensures it doesn't stretch */
+}
+
+.footer__options button {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}

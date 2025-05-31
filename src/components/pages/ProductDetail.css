@@ -1,0 +1,24 @@
+.product-detail {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.product-detail img {
+  width: 250px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.product-detail h2 {
+  margin-bottom: 10px;
+}
+
+.product-detail p {
+  margin: 6px 0;
+  font-size: 16px;
+}

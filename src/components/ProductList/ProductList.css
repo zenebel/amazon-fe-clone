@@ -1,9 +1,11 @@
 .productList {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  justify-items: center;
+  align-items: start;
+  gap: 30px;
+  padding: 40px;
   background-color: #eaeded; /* Amazon light gray background */
   min-height: 400px;
 }

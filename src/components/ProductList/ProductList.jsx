@@ -1,27 +1,37 @@
-import React from "react";
-import ProductCard from "../ProductCard/ProductCard";
-import "./ProductList.css";
+// src/components/ProductList/ProductList.jsx
 
-function ProductList({ products }) {
-  // Handle empty or missing products
-  if (!products || products.length === 0) {
-    return (
-      <div className="productList">
-        <p>No products available.</p>
-      </div>
-    );
-  }
+import React, { useEffect, useState } from "react";
+import ProductCard from "../ProductCard/ProductCard";
+import Loader from "../Loader/Loader";
+import "./ProductList.css";
+import { fetchProducts } from "../../utils/helpers";
+
+function ProductList() {
+  const [loading, setLoading] = useState(true);
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetchProducts().then((data) => {
+      setProducts(data);
+      setLoading(false);
+    });
+  }, []);
 
   return (
     <div className="productList">
-      {products.map((product) => (
-        <ProductCard
-          key={product.id}
-          title={product.title}
-          price={`$${product.price}`}
-          image={product.image}
-        />
-      ))}
+      {loading ? (
+        <Loader />
+      ) : (
+        products.map((item) => (
+          <ProductCard
+            key={item.id}
+            id={item.id}
+            title={item.title}
+            price={`$${item.price}`}
+            image={item.image}
+          />
+        ))
+      )}
     </div>
   );
 }
