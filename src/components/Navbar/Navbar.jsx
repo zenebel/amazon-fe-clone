@@ -1,16 +1,13 @@
 import React from "react";
-import "./Navbar.css"
+import "./Navbar.css";
+import amazonLogo from "../../assets/logos/amazon.png";
 
 function Navbar() {
   return (
     <header className="navbar">
       {/* Logo */}
       <div className="navbar__logo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
-          alt="Amazon Logo"
-          height="30"
-        />
+        <img src={amazonLogo} alt="Amazon Logo" height="30" />
       </div>
 
       {/* Search Bar */}

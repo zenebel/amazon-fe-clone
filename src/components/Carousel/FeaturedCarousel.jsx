@@ -4,8 +4,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import promo1 from "../../assets/promo/Promo-1.jpg";
 import promo2 from "../../assets/promo/Promo-2.jpg";
 import promo3 from "../../assets/promo/Promo-3.jpg";
-import promo4 from "../../assets/promo/promo-4.jpg";
-import promo5 from "../../assets/promo/promo-5.jpg";
+import promo4 from "../../assets/promo/Promo-4.jpg";
+import promo5 from "../../assets/promo/Promo-5.jpg";
 
 function FeaturedCarousel() {
   return (

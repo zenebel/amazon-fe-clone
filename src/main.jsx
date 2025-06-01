@@ -6,9 +6,9 @@ import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/amazon-fe-clone">
       {" "}
-      {/* wrap App with BrowserRouter */}
+      {/* correct usage */}
       <App />
     </BrowserRouter>
   </StrictMode>

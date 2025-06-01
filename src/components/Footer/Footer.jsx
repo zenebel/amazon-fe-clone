@@ -1,13 +1,13 @@
 import React from "react";
 import "./Footer.css";
-import "../../assets/logos/amazon.svg";
+import amazonLogo from "../../assets/logos/amazon.png";
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer__backToTop">Back to top</div>
       <div className="footer__regionBar">
-        <img src="../../assets/images/amazon.svg" alt="Amazon Logo" />
+        <img src={amazonLogo} alt="Amazon Logo" height="30" />
         <button>🌐 English</button>
         <button>🇺🇸 United States</button>
       </div>
