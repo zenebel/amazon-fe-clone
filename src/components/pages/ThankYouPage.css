@@ -1,0 +1,38 @@
+.thankyou-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  min-height: 60vh;
+  text-align: center;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+}
+
+.thankyou-container h1 {
+  color: #232f3e;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.thankyou-container p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.thankyou-container a button {
+  background-color: #f0c14b;
+  color: #111;
+  border: 1px solid #a88734;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.thankyou-container a button:hover {
+  background-color: #ddb347;
+}

@@ -1,10 +1,8 @@
-// src/components/ProductList/ProductList.jsx
-
 import React, { useEffect, useState } from "react";
 import ProductCard from "../ProductCard/ProductCard";
 import Loader from "../Loader/Loader";
 import "./ProductList.css";
-import { fetchProducts } from "../../utils/helpers"; // ✅ make sure this only exports a function
+import { fetchProducts } from "../../utils/helpers"; // make sure this only exports a function
 
 function ProductList() {
   const [loading, setLoading] = useState(true);
@@ -24,15 +22,7 @@ function ProductList() {
       {loading ? (
         <Loader />
       ) : (
-        products.map((item) => (
-          <ProductCard
-            key={item.id}
-            id={item.id}
-            title={item.title}
-            price={`$${item.price}`}
-            image={item.image}
-          />
-        ))
+        products.map((item) => <ProductCard key={item.id} product={item} />)
       )}
     </div>
   );
